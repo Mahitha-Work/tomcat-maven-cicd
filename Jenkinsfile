@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/yourusername/yourrepo.git'
+                credentialsId: 'github-creds', url:git 'https://github.com/yourusername/yourrepo.git', brnach: 'master'
             }
         }
 
