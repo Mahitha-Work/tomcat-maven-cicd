@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                credentialsId: 'github-creds', url: 'https://github.com/Mahitha-Work/tomcat-maven-cicd.git', brnach: 'master'
+                url: 'https://github.com/Mahitha-Work/tomcat-maven-cicd.git', brnach: 'master'
             }
         }
 
