@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'yourdockerhubusername/myapp'
+        IMAGE_NAME = 'mahithareddy/myapp' 
     }
 
     stages {
         stage('Clone') {
             steps {
-                credentialsId: 'github-creds', url:git 'https://github.com/yourusername/yourrepo.git', brnach: 'master'
+                credentialsId: 'github-creds', url: 'https://github.com/Mahitha-Work/tomcat-maven-cicd.git', brnach: 'master'
             }
         }
 
